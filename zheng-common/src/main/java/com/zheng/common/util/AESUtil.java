@@ -129,13 +129,13 @@ public class AESUtil {
 
     public static void main(String[] args) {
         String[] keys = {
-                "", "123456"
+               "123456"
         };
         System.out.println("key | AESEncode | AESDecode");
         for (String key : keys) {
-            System.out.print(key + " | ");
+            System.out.println(key + " | ");
             String encryptString = aesEncode(key);
-            System.out.print(encryptString + " | ");
+            System.out.println(encryptString + " | ");
             String decryptString = aesDecode(encryptString);
             System.out.println(decryptString);
         }
